@@ -9,7 +9,7 @@ import seaborn as sns
 from sklearn.preprocessing import StandardScaler
 import statsmodels.api as sm
 
-videogames_df = pd.read_csv(r"C:\Users\manikanta\Downloads\videogames.csv")
+videogames_df = pd.read_csv("videogames.csv")
 
 median_year = videogames_df['Year'].median()
 videogames_df['Year']=videogames_df['Year'].fillna(median_year)
